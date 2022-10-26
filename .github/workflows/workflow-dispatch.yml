@@ -46,3 +46,12 @@ jobs:
       - run: |
           echo "Job time range arg: ${{ github.event.inputs.time_window }}"
           echo "Job run manually?: ${{ github.event.inputs.manual }}"
+          echo "Job run manually3?: ${{ github.event.inputs.manual }}"
+          echo "Job run manually4?: ${{ github.event.inputs.manual }}"
+          echo "Job run manually5?: ${{ github.event.inputs.manual }}"
+          echo "Job run manually6?: ${{ github.event.inputs.manual }}"
+          echo "Job run manually7?: ${{ github.event.inputs.manual }}"
+          echo "Job run manually8?: ${{ github.event.inputs.manual }}"
+          echo "Job run manually9?: ${{ github.event.inputs.manual }}"
+          echo "Job run manually10?: ${{ github.event.inputs.manual }}"
+          echo "Job run manually11?: ${{ github.event.inputs.manual }}"
