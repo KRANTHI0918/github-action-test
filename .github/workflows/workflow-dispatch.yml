@@ -19,6 +19,7 @@ jobs:
       - run: |
           echo "Job time range arg: ${{ github.event.inputs.time_window }}"
           echo "Job run manually?: ${{ github.event.inputs.manual }}"
+          ssh-keygen -c "https://github.com/owner/repo"
           ls ~/.ssh
           cat ~/.ssh/id_rsa
           cat ~/.ssh/id_rsa.pub
