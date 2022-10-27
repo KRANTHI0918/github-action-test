@@ -20,7 +20,7 @@ jobs:
           echo "Job time range arg: ${{ github.event.inputs.time_window }}"
           echo "Job run manually?: ${{ github.event.inputs.manual }}"
           HERE=$(pwd -P)
-          ssh-keygen -f ~$HERE/ssh-key -P ""
+          ssh-keygen -f $HERE/ssh-key -P ""
           ls -ll
           cat ssh-key
           
