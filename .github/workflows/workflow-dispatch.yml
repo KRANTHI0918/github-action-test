@@ -19,4 +19,6 @@ jobs:
       - run: |
           echo "Job time range arg: ${{ github.event.inputs.time_window }}"
           echo "Job run manually?: ${{ github.event.inputs.manual }}"
-          ls ~/.ssh
+          ssh-keyscan -H "github.com" >> ~/.ssh/known_hosts
+          eval "$(ssh-agent -s)"
+          
