@@ -1,6 +1,7 @@
 name: steps-condition-test
 
-on: push
+on: 
+  workflow_dispatch:
 
 jobs:
   test:
